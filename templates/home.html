@@ -25,7 +25,7 @@
 
 <body>
 		<div class="container">
-	<h1 class='text-center mt-2 mb-4'>Careers Page</h1>
+	<h1 class='text-center mt-2 mb-4'>{{company}} Careers Page</h1>
 	<image class="img-fluid" src="https://74c2efcb-b506-4a38-8595-3a49d36c544f-00-2ey3b9gygkvdf.spock.replit.dev/static/banner.jpg" id="banner" />
 
 		<h2 class='text-center mt-3'>About</h2>
@@ -33,6 +33,22 @@
 
 		<h2 class='text-center mt-3'>Openings</h2>
 		<p class="lead">List of Jobs</p>
+		<div>
+			{% for job in jobs %}
+			 <div>
+				 
+				 <h4 class="mb-0 mt-2"> {{job['title']}}</h4>
+			
+			<div class="text-secondary"><strong>Location:</strong> {{job['location']}}</div>
+				 {% if 'salary' in job %}
+				 <div class="text-secondary"><strong>Salary:</strong> {{job['salary']}}</div>
+      {% endif %}
+				 
+				
+
+			 </div>
+			{% endfor %}
+		</div>
 		<div class="text-center">
 		<button class='btn btn-primary'>Contact Us</button>
 			<p class="copy mt-4">&copy; </p>
