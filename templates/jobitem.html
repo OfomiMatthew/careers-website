@@ -1,0 +1,18 @@
+<div class=" mb-2 pb-3">
+	<div class='row'>
+	<div class="col-9">
+
+	 <h4 class="mb-0 mt-2"> {{job['title']}}</h4>
+
+<div class="text-secondary"><strong>Location:</strong> {{job['location']}}</div>
+	 {% if 'salary' in job %}
+	 <div class="text-secondary"><strong>Salary:</strong> {{job['salary']}}</div>
+{% endif %}
+		</div>
+	<div class='col-3'>
+	<button class="btn btn-outline-info float-end">Apply</button>
+		</div>
+		</div>
+
+
+ </div>
