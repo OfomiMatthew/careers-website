@@ -16,17 +16,29 @@
 		height:350px;
 		object-fit:cover;
 		}
-
-
-
-
 		</style>
 </head>
 
 <body>
+
+{% include 'nav.html' %}
+
+
+
 		<div class="container">
+			<image class="img-fluid" src="https://74c2efcb-b506-4a38-8595-3a49d36c544f-00-2ey3b9gygkvdf.spock.replit.dev/static/banner.jpg" id="banner" />
+
 	<h1 class='text-center mt-2 mb-4'>{{company}} Careers Page</h1>
-	<image class="img-fluid" src="https://74c2efcb-b506-4a38-8595-3a49d36c544f-00-2ey3b9gygkvdf.spock.replit.dev/static/banner.jpg" id="banner" />
+				<div class="row">
+<div class="col-md-7">
+				<p class='lead'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit omnis quae, quo reprehenderit et quas ducimus natus nesciunt facere ullam eius voluptates dolore quia aspernatur beatae pariatur hic vero delectus.
+				Aperiam voluptas alias quisquam blanditiis tenetur voluptatem ad quasi praesentium fugit ullam, dolore eius delectus porro, mollitia repudiandae omnis labore! Quas modi perferendis a rem similique iste ipsam quo magnam!</p>
+				</div>
+
+					<div class="d-none  d-md-block col-5">
+	<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400" />
+					</div>
+				</div>
 
 		<h2 class='text-center mt-3'>About</h2>
 		<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore officiis similique iure repellendus consequatur sit nam reprehenderit sint qui dolor nihil, quod corrupti earum deserunt quam at sequi voluptatem.</p>
@@ -39,9 +51,13 @@
 			{% endfor %}
 		</div>
 		<div class="text-center">
-		<button class='btn btn-primary'>Contact Us</button>
-			<p class="copy mt-4">&copy; </p>
+		<a href="mailto:matthewofomi2015@gmail.com?subject=Question%20about%20Job%20Openings&body=My%20name%3A%20%3CYour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3CEnter%20your%20question%3E" 
+			
+			class='btn btn-primary'>Contact Us</a>
+			
+		
 		</div>
+		{% include 'footer.html' %}
 </div>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
